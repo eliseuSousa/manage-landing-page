@@ -1,21 +1,25 @@
-header {
-  padding: 3.2rem 6.4rem;
+header.cabecalho {
+  padding: 6.4rem 6.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
   
-  ul {
+  ul.nav-bar {
     display: flex;
     align-items: center;
   }
 
     li.item {
       list-style: none;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 500;
       color: var(--dark-blue);
       margin-left: 2.4rem;
+    }
+
+    li.item:first-child {
+      margin-left: 0;
     }
 
   button.iniciar {
@@ -27,6 +31,13 @@ header {
     font-size: 1.2rem;
     font-weight: 500;
     box-shadow: 0 .5rem .3rem hsl(12deg 88% 59% / 26%);
+  }
+
+  button.menu-hamburger {
+    background-image: url('../images/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
   }
 
 main {
@@ -71,7 +82,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 6.4rem 6.4rem;
-  height: 2.3rem;
+  height: 23rem;
 }
 
   div.container-esquerdo {
@@ -99,14 +110,22 @@ footer {
 
       ul.contados {
         align-self: flex-start;
-        height: 5.6rem;
+        justify-content: flex-start;
       }
 
         li.link a, li.contado a {
           color: var(--vary-light-gray);
           font-weight: 400;
-          font-size: 1rem;
+          font-size: 1.4rem;
           text-decoration: none;
+        }
+
+        li.contado {
+          margin-bottom: 1.2rem;
+        }
+
+        li.contado:last-child {
+          margin-bottom: 0;
         }
   
     div.container-direito {
@@ -153,3 +172,15 @@ footer {
         color: var(--dark-grayish-blue);
         align-self: flex-end;
       }
+
+
+
+@media screen and (max-width: 425px) {
+  header button.iniciar {
+    display: none;
+  }
+
+  ul.nav-bar {
+    display: none;
+  }
+}
