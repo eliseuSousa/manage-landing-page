@@ -75,6 +75,28 @@ main {
     img.ilustracao {
       width: 48rem;
     }
+  
+  section.encerramento {
+    background: var(--bright-red);
+    padding: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    h2.convite {
+      color: var(--vary-light-gray);
+      font-weight: 700;
+      font-size: 3.2rem;
+      width: 40%;
+    }
+
+    button.encerramento {
+      background-color: var(--vary-light-gray);
+      color: var(--bright-red);
+      font-weight: 700;
+      box-shadow: 0 0.5rem 0.5rem hsl(12deg 84% 36% / 70%);
+    }
 
 footer {
   align-items: center;
