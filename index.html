@@ -13,7 +13,6 @@
 
 </head>
 <body>
-  
   <header class="cabecalho">
     <img src="./assets/images/logo.svg" alt="Logo" class="logo">
 
@@ -26,6 +25,10 @@
     </ul>
 
     <button class="iniciar">Get Started</button>
+
+    <button class="menu-hamburger">
+      <!-- <img src="./assets/images/icon-hamburger.svg" alt=""> -->
+    </button>
     
   </header>
 
@@ -50,6 +53,8 @@
         Get Started</h2>
       <button class="iniciar encerramento">Get Started</button>
     </section>
+
+    <div class="blur"></div>
   </main>
 
   <footer>
@@ -121,6 +126,18 @@
       <span class="copy-right">Copyright 2020. All Rights Reserved</span>
     </div>
   </footer>
+
+  <script>
+    const botao = document.querySelector(".menu-hamburger");
+    const navBar = document.querySelector(".nav-bar");
+    const blur = document.querySelector(".blur")
+
+    botao.addEventListener("click", ()=>{
+      botao.classList.toggle("menu-hamburger-close")
+      navBar.classList.toggle("active");
+      blur.classList.toggle("blur-active");
+    })
+  </script>
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
