@@ -74,6 +74,30 @@ main {
     img.ilustracao {
       width: 48rem;
     }
+
+  section.diferencial {
+    background: var(--vary-light-gray);
+    padding: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    h2.diferencial-titulo {
+      color: var(--dark-blue);
+      font-weight: 700;
+      font-size: 3.4rem;
+      width: 80%;
+    }
+
+    p.diferencial-paragrafo {
+      color: var(--dark-grayish-blue);
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin: 3.6rem 0;
+      line-height: 2.2rem;
+      max-width: 30rem;
+    }
   
   section.encerramento {
     background: var(--bright-red);

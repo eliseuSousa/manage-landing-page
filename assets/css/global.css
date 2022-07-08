@@ -23,6 +23,10 @@
 }
 
 body {
-  background: var(--vary-light-gray);
+  background-color: var(--vary-light-gray);
+  background-image: url('../images/bg-tablet-pattern.svg');
+  background-position-x: 68.4rem;
+  background-position-y: -16.2rem;
+  background-repeat: no-repeat;
 }
 
