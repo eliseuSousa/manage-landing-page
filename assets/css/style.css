@@ -163,51 +163,70 @@ main {
       margin-bottom: 4.6rem;
     }
 
-    div.grade-depoimentos {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      padding: 3.6rem 0;
-      width: 100%;
+    div.sliders {
+      width: 41rem;
+      overflow: hidden;
     }
 
-      div.depoimento {
+      div.grade-depoimentos {
         align-items: center;
-        background-color: var(--bg-depoimento);
-        border-radius: .4rem;
         display: flex;
-        flex-direction: column;
-        width: 33.33%;
-        padding: 3rem;
-        padding-top: 4rem;
-        position: relative;
-        margin: 0;
+        justify-content: space-between;
+        padding: 3.6rem 0;
+        width: 217rem;
+        animation-name: animacao;
+        animation-duration: 45s;
+        animation-iteration-count: infinite;
       }
 
-        div.imagem-perfil {
-          position: absolute;
-          width: 6.4rem;
-          top: -3.5rem;
+      @keyframes animacao {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+        25% {margin-left: -434px;}
+        45% {margin-left: -434px;}
+        50% {margin-left: -868px;}
+        70% {margin-left: -868px;}
+        75% {margin-left: -1302px;}
+        95% {margin-left: -1302px;}
+        100% {margin-left: -1736px;}
+      }
+
+        div.depoimento {
+          align-items: center;
+          background-color: var(--bg-depoimento);
+          border-radius: .4rem;
+          display: flex;
+          flex-direction: column;
+          width: 41rem;
+          padding: 3rem;
+          padding-top: 4rem;
+          position: relative;
         }
 
-          img.avatar {
-            width: 100%;
+          div.imagem-perfil {
+            position: absolute;
+            width: 6.4rem;
+            top: -3.5rem;
           }
 
-        h3.nome {
-          font-size: 1.4rem;
-          color: var(--dark-blue);
-          font-weight: 700;
-          margin-bottom: .8rem;
-        }
+            img.avatar {
+              width: 100%;
+            }
 
-        p.resumo-depoimento {
-          text-align: center;
-          font-size: 1.2rem;
-          color: var(--dark-grayish-blue);
-          font-weight: 400;
-          line-height: 1.8rem;
-        }
+          h3.nome {
+            font-size: 1.4rem;
+            color: var(--dark-blue);
+            font-weight: 700;
+            margin-bottom: .8rem;
+          }
+
+          p.resumo-depoimento {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--dark-grayish-blue);
+            font-weight: 400;
+            line-height: 1.8rem;
+          }
   
   section.encerramento {
     background: var(--bright-red);
